@@ -1,0 +1,111 @@
+/* Estrutura conteúdos
+-----------------------------*/
+:host{
+	
+.caixa {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	backdrop-filter: blur(10px);
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.caixa1 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	backdrop-filter: blur(10px);
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.wte{
+	color: white;
+}
+
+#servicos {
+	background: white;
+}
+
+#recursos {
+	color: white;
+}
+
+#servicos h2 {
+	color: #7c25f8;
+}
+
+
+
+.h2Class {
+	color: white;
+}
+
+p{
+    font-size: 1.3em;
+}
+
+
+#recursos h3 {
+	color:black;
+}
+
+p{
+color: black;
+}
+
+.albuns {
+	padding: 10px 0;
+}
+
+.rotacionar {
+	-ms-transform: rotate(30deg); /* IE 9 */
+    -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+    transform: rotate(30deg);
+	padding-left: 80px;
+}
+
+
+
+@media (max-width: 575.98px) and (max-width: 768px){
+	.rotacionar {
+		-ms-transform: rotate(0deg); /* IE 9 */
+		-webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+		transform: rotate(0deg);
+		padding-left: 50px;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	h3, h2 {
+		font-size: 3em;
+	}
+	.btn-custom {
+		margin: 10px 15px;
+	}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	h3, h2 {
+		font-size: 4em;
+	}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	h3, h2 {
+		font-size: 4em;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	h3 {
+		font-size: 3em;
+	}
+
+	h2{
+		font-size: 3em;
+	}
+}
+
+}

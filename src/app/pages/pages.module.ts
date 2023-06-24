@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+//Modules
+import { SharedModule } from '../shared/shared.module';
 //Module routing
 import { RoutingModule } from './routing.module';
 
@@ -17,7 +20,10 @@ import { CadastroComponent } from './cadastro/cadastro.component';
   ],
   imports: [
     CommonModule,
-    RoutingModule
+    RoutingModule,
+    SharedModule,
+    FormsModule,
+    ReactiveFormsModule,
   ]
 })
 export class PagesModule { }

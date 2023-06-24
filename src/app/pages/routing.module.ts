@@ -16,13 +16,13 @@ const routes: Routes = [
     component:RelatosComponent
   },
   {
-    path:'cadastro',
+    path:'cadastros',
     component:CadastroComponent
   }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class RoutingModule { }

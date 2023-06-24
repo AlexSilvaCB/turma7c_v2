@@ -1,0 +1,35 @@
+<header><!-- inicio Cabecalho -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
+      <div class="container">
+        <a [routerLink]="''"  class="navbar-brand">
+          <h3 class="h2Class">TURMA 7ºC</h3>
+          <small>E.E. Profº Luiz Viviani Filho</small>
+        </a>
+        
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+          <i class="fas fa-bars text-white"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav-principal">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a [routerLink]="''" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="'/relatos'" class="nav-link">Relatos</a>
+            </li>
+            <li class="nav-item divisor"></li>
+
+            <li class="nav-item">
+              <a [routerLink]="'/cadastros'" class="nav-link">Cadastro</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Sobre</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header><!--/fim Cabecalho -->

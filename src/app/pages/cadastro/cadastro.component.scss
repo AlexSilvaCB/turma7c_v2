@@ -1,0 +1,40 @@
+:host{
+
+    .alert, .formZ{
+        width: 60%;
+        margin: 0 auto;
+        padding: 2%;
+        border-radius: 6px;
+        box-sizing:border-box;
+        margin-bottom: 5px;
+    }
+
+    .formZ{
+        backdrop-filter: blur(20px);
+	    background-color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .formZ button{
+        margin-left: 23%;
+    }
+    
+    .bodyC{
+        background: #008B8B;
+    }
+    
+    .formPadding{
+        padding-left: 18%;
+    }
+
+    small{
+        padding-left: 20%;
+        color: red;
+    }
+
+    @media (max-width: 575.98px) {
+        small{
+            padding-left: 2%;
+        }
+    }
+
+}

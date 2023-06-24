@@ -1,0 +1,46 @@
+
+
+nav.navbar-transparente {
+	padding: 18px 0px;
+	background: rgba(0,0,0,0.6);
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #9bf0e1;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: rgba(255,255,255,0.5);
+	margin-right: 15px
+}
+
+.divisor {
+	width: 1px;
+	background: white;
+	margin: 12px 15px;
+}
+
+small,.h2Clas, li{
+	color: white;
+}
+
+h3 {
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: -0.05em;
+	color: white;
+}
+
+@media (max-width: 575.98px) {
+	li{
+		margin-left: 5%;
+	}
+	h3, small{
+		margin-left: 20%;
+	}
+}
