@@ -1,5 +1,8 @@
 <div class="BodyB">
+
 <app-header></app-header>
+
+<button *ngIf="loginIn" class="btn btn-primary btnlg" (click)="login()">LOGIN</button>
 
 <section>
     <div style="height: 130px;">
@@ -14,8 +17,10 @@
               <small> {{ turma7c.turma }} </small>
               <h2 *ngIf="turma7c.nome && turma7c.nickname == '' " class="card-title">{{ turma7c.nome }}</h2>
               <h2 *ngIf="turma7c.nickname" class="card-title">{{ turma7c.nickname }}</h2>
-              <p class="card-text">{{ turma7c.descricao }}</p>
-              <p class="card-text">{{ turma7c.descricao2 }}</p>
+              <h4 *ngIf="turma7c.descricao">Você já sofreu alguma forma de racismo?</h4>
+              <p  class="card-text">{{ turma7c.descricao }}</p>
+              <h4 *ngIf="turma7c.descricao2">Você já presenciou alguma forma de racismo?</h4>
+              <p  class="card-text">{{ turma7c.descricao2 }}</p>
               <a href="#" class="btn btn-primary">Voltar</a>
               </div>
         </div>

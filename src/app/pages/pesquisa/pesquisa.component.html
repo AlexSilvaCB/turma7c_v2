@@ -1,0 +1,48 @@
+<div class="BodyB">
+  <app-header></app-header>
+  <div style="height: 130px;">
+
+  </div>
+  <div class="dropdown ml-2">
+    <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Lista Pesquisa - Click e saiba mais
+    </a>
+
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <button class="dropdown-item sd {{ btActive }}" (click)="Slide1()">Eletiva - Na trilha da Informação</button>
+      <button class="dropdown-item sd {{ btActive1 }}" (click)="Slide2()">Eletiva - Luiz Viviani Na Trilha Antirracista</button>
+      <button class="dropdown-item sd {{ btActive2 }}" (click)="SlideAll()">Todas as Pesquisas</button>
+    </div>
+  </div>
+
+  <ul *ngIf="Slid1" class="list-group list-group-flush">
+    <li class="list-group-item"> <img src="./../../../assets/img/Slide1.JPG" alt=""> </li>
+    <li class="list-group-item"> <img src="./../../../assets/img/Slide2.JPG" alt=""> </li>
+    <li class="list-group-item"> <img src="./../../../assets/img/Slide3.JPG" alt=""> </li>
+    <li class="list-group-item"> <img src="./../../../assets/img/Slide4.JPG" alt=""> </li>
+    <li class="list-group-item"> <img src="./../../../assets/img/Slide5.JPG" alt=""> </li>
+    <li class="list-group-item"> <img src="./../../../assets/img/Slide6.JPG" alt=""> </li>
+    <li class="list-group-item"> <img src="./../../../assets/img/Slide7.JPG" alt=""> </li>
+    <li class="list-group-item"> <img src="./../../../assets/img/Slide8.JPG" alt=""> </li>
+  </ul>
+
+  <ul *ngIf="Slid2" class="list-group list-group-flush">
+    <li class="list-group-item"> <img src="./../../../assets/img/Slide9.JPG" alt=""> </li>
+    <li class="list-group-item"> <img src="./../../../assets/img/Slide10.JPG" alt=""> </li>
+    <li class="list-group-item"> <img src="./../../../assets/img/Slide11.JPG" alt=""> </li>
+    <li class="list-group-item"> <img src="./../../../assets/img/Slide12.JPG" alt=""> </li>
+    <li class="list-group-item"> <img src="./../../../assets/img/Slide13.JPG" alt=""> </li>
+    <li class="list-group-item"> <img src="./../../../assets/img/Slide14.JPG" alt=""> </li>
+    <li class="list-group-item"> <img src="./../../../assets/img/Slide15.JPG" alt=""> </li>
+    <li class="list-group-item"> <img src="./../../../assets/img/Slide16.JPG" alt=""> </li>
+    <li class="list-group-item"> <img src="./../../../assets/img/Slide17.JPG" alt=""> </li>
+    <li class="list-group-item"> <img src="./../../../assets/img/Slide18.JPG" alt=""> </li>
+    <li class="list-group-item"> <img src="./../../../assets/img/Slide19.JPG" alt=""> </li>
+    <li class="list-group-item"> <img src="./../../../assets/img/Slide20.JPG" alt=""> </li>
+    <li class="list-group-item"> <img src="./../../../assets/img/Slide21.JPG" alt=""> </li>
+  </ul>
+
+
+</div>
+<app-footer></app-footer>
+

@@ -5,6 +5,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { RelatosComponent } from './relatos/relatos.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { SobreComponent } from './sobre/sobre.component';
+import { PesquisaComponent } from './pesquisa/pesquisa.component';
 
 const routes: Routes = [
   {
@@ -18,6 +20,14 @@ const routes: Routes = [
   {
     path:'cadastros',
     component:CadastroComponent
+  },
+  {
+    path:'pesquisa',
+    component:PesquisaComponent
+  },
+  {
+    path:'sobre',
+    component:SobreComponent
   }
 ];
 

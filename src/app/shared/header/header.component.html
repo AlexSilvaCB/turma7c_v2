@@ -2,10 +2,10 @@
     <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
       <div class="container">
         <a [routerLink]="''"  class="navbar-brand">
-          <h3 class="h2Class">TURMA 7ºC</h3>
-          <small>E.E. Profº Luiz Viviani Filho</small>
+          <h3 class="h2Class">CLUBE DE CIÊNCIAS</h3>
+          <small>Luiz Viviani Na Trilha Antirracista</small>
         </a>
-        
+
 
         <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
           <i class="fas fa-bars text-white"></i>
@@ -25,7 +25,10 @@
               <a [routerLink]="'/cadastros'" class="nav-link">Cadastro</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Sobre</a>
+              <a [routerLink]="'/pesquisa'" class="nav-link">Pesquisa</a>
+            </li>
+            <li class="nav-item">
+              <a [routerLink]="'/sobre'" class="nav-link">Sobre</a>
             </li>
           </ul>
         </div>

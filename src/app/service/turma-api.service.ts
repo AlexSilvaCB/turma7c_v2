@@ -11,8 +11,8 @@ import { InterTurma7c } from '../pages/cadastro/InterTurma7c';
 })
 export class TurmaApiService {
 
-  private readonly url:string = 'http://localhost:8080/form'
-  private readonly urll:string = 'http://localhost:8080/form/cadastro'
+  private readonly url:string = 'http://turma7C.us-east-1.elasticbeanstalk.com/form'
+  private readonly urll:string = 'http://turma7C.us-east-1.elasticbeanstalk.com/form/cadastro'
 
   constructor(
     private http: HttpClient ) {}
@@ -24,6 +24,7 @@ export class TurmaApiService {
       return this.http.post<InterTurma7c>(this.urll, record).pipe(first())
       console.log(record)
     }
+
     public apiGetTurma7c( url: string ):Observable<Turma7cList>{
       return this.http.get<Turma7cList>( url ).pipe(first(),
         map(

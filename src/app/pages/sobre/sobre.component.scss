@@ -1,0 +1,40 @@
+:host{
+.BodyB{
+background-image: url(./../../../assets/img/people.png);
+}
+
+.carousel-inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item{
+  width: 80%;
+
+}
+
+.imgCont{
+  border-radius: 5px;
+  height: 85vh;
+}
+
+  .pdf{
+    display: flex;
+    justify-content: center;
+  }
+
+  embed{
+    width: 920px;
+    height: 1200px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 767.98px) {
+    .imgCont{
+      height: auto;
+    }
+  }
+
+}

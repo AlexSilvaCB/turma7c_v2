@@ -21,8 +21,8 @@ export class CadastroComponent implements OnInit{
   ngOnInit(): void {
     this.turma7cForm = new FormGroup({
       id: new FormControl(''),
-      nome: new FormControl('', [Validators.required]),
-      turma: new FormControl('', [Validators.required]),
+      nome: new FormControl(''),
+      turma: new FormControl(''),
 	    nickname: new FormControl(''),
 	    simOuNao: new FormControl(''),
       descricao: new FormControl(''),
@@ -67,6 +67,8 @@ export class CadastroComponent implements OnInit{
     {next: (resultService) =>
     this.onSucess(),
     error: (error) => this.onError()})
+
+    addEventListener("load", (event) => {})
   }
 
   private onSucess(){
@@ -80,5 +82,7 @@ export class CadastroComponent implements OnInit{
  onClik(){
   this.checkboxValue = !this.checkboxValue
  }
+
+ 
 
 }

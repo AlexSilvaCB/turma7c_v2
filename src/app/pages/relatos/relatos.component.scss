@@ -1,6 +1,14 @@
 @import '../home/home.component.scss';
 
 :host{
+
+  .btnlg{
+    position: absolute;
+    top: 21%;
+    right: 3%;
+    z-index: 1000;
+  }
+
 .cardXY{
 	width: 60%;
 	margin: 0 auto;
@@ -19,10 +27,15 @@ h3{
 }
 
 @media (max-width: 575.98px) {
+  .btnlg{
+    top: 25%;
+    right: 5%;
+  }
+
 	.cardXY{
 		width: 80%;
 	}
-	
+
 	.cardXY:hover{
 		width: 81%;
 	}

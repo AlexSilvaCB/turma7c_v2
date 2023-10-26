@@ -13,15 +13,14 @@
             </button>
           </div>
             <form class="formZ mb-2"  [formGroup]="turma7cForm" #formDir="ngForm">
-                <div class="form-group row">
+                <div *ngIf="false" class="form-group row">
                   <label for="nome" class="col-sm-2 col-form-label">Nome</label>
                   <div class="col-sm-10">
-                    <input type="text" 
-                    class="form-control" 
-                    id="inputNome" 
-                    placeholder="Nome" 
-                    formControlName="nome" 
-                    required>
+                    <input type="text"
+                    class="form-control"
+                    id="inputNome"
+                    placeholder="Nome"
+                    formControlName="nome">
                   </div>
                   <small *ngIf="nome.invalid && formDir.submitted " class="validation-error" >
                     <p *ngIf="nome.errors?.['required']">O nome é obrigatório.</p>
@@ -29,7 +28,7 @@
 
                 </div>
 
-                <div class="form-check">
+                <div *ngIf="false" class="form-check">
                   <input class="form-check-input" type="checkbox" ngValue="true" id="defaultCheck1"
                   (click)="onClik()">
                   <label class="form-check-label" for="defaultCheck1">
@@ -40,22 +39,22 @@
                 <div class="form-group row" *ngIf="checkboxValue">
                   <label for="nickname" class="col-sm-2 col-form-label">Nickname</label>
                   <div class="col-sm-10">
-                    <input type="text" 
-                    class="form-control" 
-                    id="inputNome" 
-                    placeholder="Nickname" 
+                    <input type="text"
+                    class="form-control"
+                    id="inputNome"
+                    placeholder="Nickname"
                     formControlName="nickname">
                   </div>
                 </div>
 
-                <div class="form-group row">
-                  <label for="turma" class="col-sm-2 col-form-label">Turma</label>
+                <div *ngIf="false" class="form-group row">
+                  <label for="turma" class="col-sm-2 col-form-label">Título</label>
                   <div class="col-sm-10">
-                    <input type="text" 
-                    class="form-control" 
-                    id="inputTurma" 
-                    placeholder="Turma"
-                    formControlName="turma" 
+                    <input type="text"
+                    class="form-control"
+                    id="inputTurma"
+                    placeholder="Título"
+                    formControlName="turma"
                     required>
                   </div>
                   <small *ngIf="turma.invalid && formDir.submitted" class="validationError" >
@@ -65,13 +64,13 @@
                 </div>
                 <fieldset class="form-group formPadding">
                   <div class="row">
-                    <legend class="col-form-label col-sm-12">Você já sofreu alguma forma de racismo?.</legend>
+                    <legend class="col-form-label col-sm-12">Você já sofreu alguma forma de racismo?</legend>
                     <div class="col-sm-10">
                       <div class="form-check">
-                        <input class="form-check-input" 
-                        type="radio" 
-                        name="simOuNao" 
-                        id="gridRadios1" 
+                        <input class="form-check-input"
+                        type="radio"
+                        name="simOuNao"
+                        id="gridRadios1"
                         value="sim"
                         formControlName="simOuNao">
                         <label class="form-check-label" for="gridRadios1">
@@ -79,9 +78,9 @@
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" 
-                        type="radio" name="simOuNao" 
-                        id="gridRadios2" 
+                        <input class="form-check-input"
+                        type="radio" name="simOuNao"
+                        id="gridRadios2"
                         value="nao"
                         formControlName="simOuNao">
                         <label class="form-check-label" for="gridRadios2">
@@ -89,12 +88,12 @@
                         </label>
                       </div>
                       </div>
-                    </div>    
+                    </div>
                     <div *ngIf="simOuNao.value == 'sim'" class="form-group pt-2 ">
-                      <label for="descricao">Descrição</label>
-                      <textarea class="form-control" 
+                      <label for="descricao">Descreva seu relato.</label>
+                      <textarea class="form-control"
                       id="exampleFormControlTextarea1" rows="3"
-                      formControlName="descricao" 
+                      formControlName="descricao"
                       required>
                     </textarea>
                     </div>
@@ -103,10 +102,10 @@
                         <legend class="col-form-label col-sm-12">Você já presenciou alguma forma de racismo?</legend>
                         <div class="col-sm-10">
                           <div class="form-check">
-                            <input class="form-check-input" 
-                            type="radio" 
-                            name="simOuNao2" 
-                            id="gridRadios3" 
+                            <input class="form-check-input"
+                            type="radio"
+                            name="simOuNao2"
+                            id="gridRadios3"
                             value="sim"
                             formControlName="simOuNao2" required>
                             <label class="form-check-label" for="gridRadios3">
@@ -114,9 +113,9 @@
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" 
-                            type="radio" name="simOuNao2" 
-                            id="gridRadios4" 
+                            <input class="form-check-input"
+                            type="radio" name="simOuNao2"
+                            id="gridRadios4"
                             value="nao"
                             formControlName="simOuNao2">
                             <label class="form-check-label" for="gridRadios4">
@@ -124,26 +123,26 @@
                             </label>
                           </div>
                           </div>
-                        </div>    
+                        </div>
                         <div *ngIf="simOuNao2.value == 'sim'" class="form-group pt-2 ">
-                          <label for="descricao2">Descrição</label>
-                          <textarea class="form-control" 
+                          <label for="descricao2">Descreva o relato.</label>
+                          <textarea class="form-control"
                           id="exampleFormControlTextarea1" rows="3"
-                          formControlName="descricao2" 
+                          formControlName="descricao2"
                           required>
                         </textarea>
-                        
+
                        <!-- <small *ngIf="descricao2.invalid && formDir.submitted" class="validation-error" >
                           <p *ngIf="descricao2.errors?.['required']">Descrição é obrigatório.</p>
                         </small> -->
-                       
-    
+
+
                         </div>
                 </fieldset>
-             
+
                   <div class="form-group row">
                     <div class="col-sm-10">
-                      <button type="submit" 
+                      <button type="submit"
                       class="btn btn-primary" (click)="onSubmit()">Enviar</button>
                     </div>
                   </div>

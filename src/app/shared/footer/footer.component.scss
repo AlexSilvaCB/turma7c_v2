@@ -12,6 +12,10 @@ footer h4 {
 	text-transform: uppercase;
 }
 
+footer .clube{
+  color: #00FFFF;
+}
+
 footer .navbar-nav p {
 	color: white;
 	font-size: 0.8em;
@@ -31,3 +35,12 @@ footer ul li {
 	float: right;
 	margin: 0 5px;
 }
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  img{
+    margin-left: -30px;
+  }
+
+}
+
